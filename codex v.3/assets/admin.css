@@ -1,0 +1,150 @@
+.ai-helper-wrap {
+    margin-top: 20px;
+}
+
+.ai-helper-layout {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 16px;
+}
+
+.ai-helper-card {
+    background: #fff;
+    border: 1px solid #dcdcde;
+    padding: 16px;
+    margin-bottom: 16px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.04);
+}
+
+.ai-helper-block-title {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.ai-helper-cost-row {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin: 8px 0 12px;
+}
+
+.ai-helper-cost-item {
+    background: #f6f7f7;
+    border: 1px solid #dcdcde;
+    padding: 8px 12px;
+    border-radius: 4px;
+    font-weight: 600;
+}
+
+.ai-helper-modes {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+}
+
+.ai-helper-mode-buttons label {
+    margin-right: 12px;
+    font-weight: 500;
+}
+
+.ai-helper-action {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.ai-helper-status {
+    font-weight: 600;
+    color: #2271b1;
+}
+
+.ai-helper-status.error {
+    color: #b32d2e;
+}
+
+.ai-helper-scenario-panel {
+    display: none;
+    margin-top: 12px;
+    border-top: 1px solid #dcdcde;
+    padding-top: 12px;
+}
+
+.ai-helper-scenario-panel.active {
+    display: block;
+}
+
+.ai-helper-scenario-panel label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.ai-helper-scenario-panel input,
+.ai-helper-scenario-panel textarea,
+.ai-helper-scenario-panel select {
+    width: 100%;
+}
+
+.ai-helper-result {
+    margin-top: 12px;
+}
+
+.ai-helper-result-header {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.ai-helper-tabs {
+    display: flex;
+    gap: 8px;
+}
+
+.ai-helper-tab {
+    border: 1px solid #dcdcde;
+    padding: 6px 12px;
+    background: #f6f7f7;
+    cursor: pointer;
+}
+
+.ai-helper-tab.active {
+    background: #2271b1;
+    color: #fff;
+}
+
+.ai-helper-result-panel {
+    display: none;
+    min-height: 220px;
+    width: 100%;
+    border: 1px solid #dcdcde;
+    padding: 12px;
+    background: #fff;
+}
+
+.ai-helper-result-panel.active {
+    display: block;
+}
+
+.ai-helper-actions {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-top: 12px;
+}
+
+.ai-helper-sidebar .ai-helper-card label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.ai-helper-sidebar .ai-helper-card textarea,
+.ai-helper-sidebar .ai-helper-card input,
+.ai-helper-sidebar .ai-helper-card select {
+    width: 100%;
+}
+
+@media (max-width: 1100px) {
+    .ai-helper-layout {
+        grid-template-columns: 1fr;
+    }
+}
