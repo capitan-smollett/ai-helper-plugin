@@ -1,0 +1,110 @@
+.ai-helper-wrap {
+    max-width: 1100px;
+}
+
+.ai-helper-top {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.ai-helper-input-block {
+    flex: 1 1 60%;
+}
+
+.ai-helper-modes {
+    flex: 1 1 35%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.ai-helper-mode-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.ai-helper-mode.active {
+    background: #2271b1;
+    color: #fff;
+}
+
+.ai-helper-scenario-select label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: 600;
+}
+
+.ai-helper-select {
+    width: 100%;
+}
+
+.ai-helper-cost-line {
+    display: flex;
+    gap: 15px;
+    margin-top: 8px;
+    font-weight: 600;
+}
+
+.ai-helper-panel {
+    background: #fff;
+    border: 1px solid #dcdcde;
+    padding: 16px;
+    margin-top: 16px;
+}
+
+.ai-helper-panel label {
+    display: block;
+    margin-bottom: 12px;
+}
+
+.ai-helper-panel input[type="text"],
+.ai-helper-panel input[type="number"],
+.ai-helper-panel textarea,
+.ai-helper-panel select {
+    margin-top: 4px;
+}
+
+.ai-helper-scenario-panel.hidden {
+    display: none;
+}
+
+.ai-helper-global-settings label {
+    display: block;
+    margin-bottom: 12px;
+}
+
+.ai-helper-actions {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 16px;
+}
+
+.ai-helper-result-tabs {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.ai-helper-result-body {
+    min-height: 200px;
+    background: #f8f9f9;
+    border: 1px solid #dcdcde;
+    padding: 12px;
+    overflow: auto;
+}
+
+.ai-helper-result-body.hidden {
+    display: none;
+}
+
+.ai-helper-result-actions {
+    margin-top: 10px;
+    display: flex;
+    gap: 10px;
+}
+
+.ai-helper-status {
+    min-height: 20px;
+}
