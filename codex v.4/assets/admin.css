@@ -1,0 +1,124 @@
+.ai-helper-top {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.ai-helper-controls {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 12px;
+}
+
+.ai-helper-modes {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.ai-helper-costs {
+    display: flex;
+    gap: 16px;
+    font-weight: 600;
+    align-items: center;
+}
+
+.ai-helper-scenarios select {
+    min-width: 240px;
+}
+
+.ai-helper-settings .ai-helper-field {
+    margin-bottom: 12px;
+}
+
+.ai-helper-settings label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 4px;
+}
+
+.ai-helper-actions {
+    margin: 16px 0;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.ai-helper-status {
+    font-style: italic;
+}
+
+.ai-helper-result {
+    background: #fff;
+    border: 1px solid #ccd0d4;
+    padding: 16px;
+    margin-bottom: 16px;
+}
+
+.ai-helper-result-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+}
+
+.ai-helper-tabs {
+    display: flex;
+    gap: 8px;
+}
+
+.ai-helper-tabs .tab {
+    padding: 8px 12px;
+    border: 1px solid #ccd0d4;
+    background: #f6f7f7;
+    cursor: pointer;
+}
+
+.ai-helper-tabs .tab.active {
+    background: #fff;
+    border-bottom: none;
+}
+
+.ai-helper-result-body {
+    border: 1px solid #ccd0d4;
+    padding: 12px;
+    margin-top: 8px;
+    min-height: 260px;
+}
+
+.ai-helper-result-body .tab-content {
+    display: none;
+    white-space: pre-wrap;
+}
+
+.ai-helper-result-body .tab-content.active {
+    display: block;
+}
+
+.ai-helper-result-actions {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.ai-helper-global {
+    background: #fff;
+    border: 1px solid #ccd0d4;
+    padding: 16px;
+}
+
+.ai-helper-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 12px;
+}
+
+.ai-helper-inline {
+    display: flex;
+    flex-direction: column;
+}
+
+#ai-helper-result-view {
+    font-size: 14px;
+    line-height: 1.6;
+}
