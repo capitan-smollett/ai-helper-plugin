@@ -1,0 +1,130 @@
+.ai-helper-wrap {
+    max-width: 1200px;
+    margin: 20px auto;
+}
+
+.ai-helper-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.ai-grid {
+    display: flex;
+    gap: 20px;
+}
+.ai-col-left { flex: 1; max-width: 400px; }
+.ai-col-right { flex: 2; }
+
+.ai-box {
+    background: #fff;
+    border: 1px solid #c3c4c7;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 1px 1px rgba(0,0,0,.04);
+}
+
+.ai-box h3 { margin-top: 0; margin-bottom: 15px; border-bottom: 1px solid #eee; padding-bottom: 10px; }
+
+/* Ввод */
+#ai-source-input {
+    width: 100%;
+    min-height: 150px;
+    font-family: monospace;
+}
+
+/* Строка расходов */
+.ai-cost-row {
+    margin-top: 10px;
+    display: flex;
+    gap: 20px;
+    font-size: 13px;
+    color: #50575e;
+    padding: 10px;
+    background: #f0f0f1;
+    border-radius: 4px;
+}
+
+/* Кнопки режимов */
+.ai-mode-buttons {
+    display: flex;
+    gap: 5px;
+    margin-bottom: 15px;
+}
+.ai-mode-btn {
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #2271b1;
+    background: #fff;
+    color: #2271b1;
+    cursor: pointer;
+    border-radius: 4px;
+}
+.ai-mode-btn.active {
+    background: #2271b1;
+    color: #fff;
+}
+
+/* Формы */
+.ai-box label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 5px;
+    margin-top: 15px;
+}
+.ai-box input[type="text"], 
+.ai-box input[type="number"], 
+.ai-box select, 
+.ai-box textarea {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Результат */
+.ai-result-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.ai-tabs {
+    display: flex;
+    gap: 0;
+    border: 1px solid #c3c4c7;
+    border-radius: 4px;
+    overflow: hidden;
+}
+.ai-tab {
+    border: none;
+    background: #f6f7f7;
+    padding: 5px 15px;
+    cursor: pointer;
+    border-right: 1px solid #c3c4c7;
+}
+.ai-tab:last-child { border-right: none; }
+.ai-tab.active { background: #fff; font-weight: bold; }
+
+.ai-result-content {
+    min-height: 400px;
+    width: 100%;
+    border: 1px solid #dcdcde;
+    padding: 15px;
+    background: #fff;
+    box-sizing: border-box;
+    white-space: pre-wrap; /* для Text/HTML view */
+}
+
+#ai-result-html {
+    font-family: monospace;
+    background: #f0f0f1;
+    color: #3c434a;
+}
+
+.ai-actions {
+    margin-top: 15px;
+    display: flex;
+    gap: 10px;
+}
+
+.spinner { float: none; vertical-align: middle; margin-top: 0; }
+.spinner.is-active { visibility: visible; }
