@@ -1,0 +1,150 @@
+.ai-helper-wrap {
+	max-width: 1200px;
+}
+
+.ai-helper-main {
+	display: grid;
+	gap: 24px;
+}
+
+.ai-helper-section {
+	background: #fff;
+	border: 1px solid #e2e4e7;
+	box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+	padding: 20px;
+	border-radius: 4px;
+}
+
+.ai-helper-modes {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 16px;
+	align-items: flex-end;
+}
+
+.ai-helper-mode-buttons {
+	display: flex;
+	gap: 8px;
+	flex-wrap: wrap;
+}
+
+.ai-helper-mode-btn {
+	white-space: nowrap;
+}
+
+#ai-helper-input {
+	width: 100%;
+	font-family: monospace;
+	resize: vertical;
+}
+
+#ai-helper-scenario {
+	max-width: 300px;
+}
+
+.ai-helper-settings-placeholder {
+	color: #757575;
+	font-style: italic;
+}
+
+.ai-helper-global table.form-table th {
+	width: 200px;
+}
+
+.ai-helper-cost-bar {
+	display: flex;
+	gap: 24px;
+	padding: 12px 20px;
+	background: #f8f9f9;
+	border: 1px solid #e2e4e7;
+	border-radius: 4px;
+	font-size: 14px;
+}
+
+.ai-helper-cost-item strong {
+	margin-right: 6px;
+}
+
+.ai-helper-actions {
+	display: flex;
+	gap: 12px;
+	align-items: center;
+}
+
+.ai-helper-spinner {
+	animation: ai-helper-spin 1s linear infinite;
+}
+
+@keyframes ai-helper-spin {
+	to { transform: rotate(360deg); }
+}
+
+.ai-helper-result-tabs {
+	margin-bottom: 16px;
+}
+
+.ai-helper-tab {
+	padding: 8px 16px;
+	background: #f1f1f1;
+	border: 1px solid #ddd;
+	border-bottom: none;
+	border-radius: 4px 4px 0 0;
+	cursor: pointer;
+}
+
+.ai-helper-tab.active {
+	background: #fff;
+	border-bottom: 1px solid #fff;
+}
+
+.ai-helper-result-content {
+	border: 1px solid #ddd;
+	border-top: none;
+	min-height: 300px;
+	padding: 20px;
+	background: #fff;
+}
+
+.ai-helper-result-tab-content {
+	display: none;
+}
+
+.ai-helper-result-tab-content.active {
+	display: block;
+}
+
+.ai-helper-placeholder {
+	color: #757575;
+	font-style: italic;
+}
+
+#ai-helper-result-html pre {
+	overflow: auto;
+	max-height: 500px;
+	background: #f4f4f4;
+	padding: 12px;
+	border-radius: 4px;
+}
+
+.ai-helper-result-actions {
+	margin-top: 16px;
+	display: flex;
+	gap: 12px;
+}
+
+/* Dark Mode support (WP 5.9+) */
+@media (prefers-color-scheme: dark) {
+	.ai-helper-result-content,
+	.ai-helper-section {
+		background: #2e2e2e;
+		color: #e0e0e0;
+		border-color: #444;
+	}
+	#ai-helper-input {
+		background: #3a3a3a;
+		color: #fff;
+	}
+	#ai-helper-result-html pre {
+		background: #222;
+	}
+}
